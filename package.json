@@ -28,5 +28,8 @@
     "node-localstorage": "^2.2.1",
     "twin-bcrypt": "^2.1.1",
     "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "glob-promise": "^4.2.0"
   }
 }
