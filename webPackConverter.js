@@ -107,7 +107,7 @@ fs.rm(CLIENT_PAGES_FOLDER, { recursive: true, force: true })
   main  = 'import Vuetify from "@/plugins/vuetify";\n' + main
   main  = 'import Vue from "vue";\n' + main
 
-  const dataMatch = main.match(/data((.|\n)*)vuetify/gm)
+  const dataMatch = main.match(/data\(\)((.|\n)*)vuetify/gm)
   const inside = dataMatch[0]
   main = main.replace(dataMatch[0], 'vuetify') // void all data
 
