@@ -7,6 +7,12 @@
     {
       "type": "pwa-node",
       "request": "launch",
+      "name": "Debug File",
+      "program": "${file}"
+    },
+    {
+      "type": "pwa-node",
+      "request": "launch",
       "name": "Launch App",
       "skipFiles": [
         "<node_internals>/**"

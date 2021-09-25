@@ -1,4 +1,7 @@
 node_modules
 .env
 
-settings.json
+client/src/pages/
+client/resources/
+client/index.html
+client/main.js
