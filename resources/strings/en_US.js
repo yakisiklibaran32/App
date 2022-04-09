@@ -32,7 +32,8 @@ export default {
         subtabs: {
           profile: 'profile',
           statistics: 'statistics',
-          gallery: 'gallery'
+          gallery: 'gallery',
+          colorlab: 'color lab'
         }
       },
       addons: {

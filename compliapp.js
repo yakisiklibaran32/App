@@ -17,6 +17,7 @@ const ModpacksPage = () => import('./pages/modding/modpacks.js')
 const filesPage = () => import('./pages/files/pageFiles.js')
 const GalleryPage = () => import('./pages/gallery/gallery.js')
 const SettingsPage = () => import('./pages/settings/settingsPage.js')
+const ColorLabPage = () => import('./pages/color-lab/colorLabPage.js')
 
 Object.defineProperty(Object.prototype, 'isObject', {
   /**
@@ -92,7 +93,8 @@ const ALL_TABS_ROUTES = [
     subtabs: [
       { routes: [{ path: '/profile', component: ProfilePage }] },
       { routes: [{ path: '/contributions-stats', component: ContributorStatsPage }] },
-      { routes: [{ path: '/gallery', redirect: '/gallery/java/32x/latest/All/' }, { path: '/gallery/:edition/:resolution/:version/:tag/:search*', component: GalleryPage }] }
+      { routes: [{ path: '/gallery', redirect: '/gallery/java/32x/latest/All/' }, { path: '/gallery/:edition/:resolution/:version/:tag/:search*', component: GalleryPage }] },
+      { routes: [{ path: '/color-lab', component: ColorLabPage }]}
     ]
   },
   {
@@ -152,7 +154,8 @@ let ALL_TABS = [
     subtabs: [
       { enabled: true, icon: 'mdi-account', to: '/profile', label: 'profile' },
       { enabled: true, icon: 'mdi-chart-timeline-variant', to: '/contributions-stats', label: 'statistics' },
-      { enabled: true, icon: 'mdi-texture', to: '/gallery', label: 'gallery' }
+      { enabled: true, icon: 'mdi-texture', to: '/gallery', label: 'gallery' },
+      { enabled: true, icon: 'mdi-palette', to: '/color-lab', label: 'colorlab' }
     ]
   },
   {
