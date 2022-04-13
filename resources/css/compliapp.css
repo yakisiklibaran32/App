@@ -1,6 +1,6 @@
 @font-face {
-  font-family: Compliance;
-  src: url("../fonts/Compliance.ttf") format("truetype");
+  font-family: Faithful;
+  src: url("../fonts/Faithful.ttf") format("truetype");
 }
 
 @font-face {
@@ -53,7 +53,7 @@
 
 /* Keep background from #app when the page is loading */
 .theme--dark.v-application {
-  background: #120e19 url(https://compliancepack.net/image/background/the_end.jpg) no-repeat center;
+  background: #120e19 url(https://faithfulpack.net/image/background/the_end.jpg) no-repeat center;
   background-attachment: fixed;
 }
 
@@ -250,11 +250,11 @@ img.texture-img {
   border-radius: 0 !important;
 }
 
-.compliance-font {
-  font-family: Compliance;
+.faithful-font {
+  font-family: Faithful;
 }
 
-h2.compliance-font {
+h2.faithful-font {
   font-weight: 600;
 }
 

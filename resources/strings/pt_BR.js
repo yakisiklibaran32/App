@@ -6,7 +6,7 @@
 
 export default {
   global: {
-    name: 'Compliance Web Application',
+    name: 'Faithful Web Application',
     logout: 'Sair',
     login: 'Entrar com Discord',
     ends_success: 'Sucesso',
@@ -314,7 +314,7 @@ export default {
     title: 'Estatísticas de contribuição',
     label: {
       textures: 'Texturas',
-      contributores: 'Contribuidores',
+      contributors: 'Contribuidores',
       contributions: 'Contribuições'
     }
   },

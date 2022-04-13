@@ -107,7 +107,7 @@ export default {
             class="gallery-texture-image"
             onerror="this.style.display='none'; this.nextElementSibling.style.display='block'; this.parentElement.style.background='rgba(0,0,0,0.3)';this.parentElement.classList.add('rounded')"
             :src="texture.url"
-            lazy-src="https://database.compliancepack.net/images/bot/loading.gif" />
+            lazy-src="https://database.faithfulpack.net/images/bot/loading.gif" />
           <div class="not-done" style="display: none;">
             <span></span><div>
               <h1>#{{ texture.textureID }}</h1>
@@ -281,7 +281,7 @@ export default {
     },
     getTextureURL(useID) {
       let use = this.displayed.uses[useID]
-      // fixes bug when sometimes, uses are not upadated yet
+      // fixes bug when sometimes, uses are not updated yet
       if(use === undefined) use = Object.values(this.displayed.uses)[0]
       
       // find path from use and path ID
@@ -291,10 +291,10 @@ export default {
       switch (this.edition) {
         case 'bedrock':
           if (this.resolution === '16x') return `https://raw.githubusercontent.com/CompliBot/Default-Bedrock/${this.version == 'latest' ? settings.versions[this.edition][0] : this.version}/${path.path}`
-          return `https://raw.githubusercontent.com/Compliance-Resource-Pack/Compliance-Bedrock-${this.resolution}/${this.version == 'latest' ? settings.versions[this.edition][0] : this.version}/${path.path}`
+          return `https://raw.githubusercontent.com/Faithful-Resource-Pack/Faithful-Bedrock-${this.resolution}/${this.version == 'latest' ? settings.versions[this.edition][0] : this.version}/${path.path}`
         case 'java':
           if (this.resolution === '16x') return `https://raw.githubusercontent.com/CompliBot/Default-Java/${this.version == 'latest' ? settings.versions[this.edition][0] : this.version}/${path.path}`
-          return `https://raw.githubusercontent.com/Compliance-Resource-Pack/Compliance-Java-${this.resolution}/${this.version == 'latest' ? settings.versions[this.edition][0] : this.version}/${path.path}`
+          return `https://raw.githubusercontent.com/Faithful-Resource-Pack/Faithful-Java-${this.resolution}/${this.version == 'latest' ? settings.versions[this.edition][0] : this.version}/${path.path}`
       }
 
       // TODO: put a default value
@@ -434,7 +434,7 @@ export default {
         }
       })
 
-      // stuff below are only available in compliance, not default resolution
+      // stuff below are only available in faithful, not default resolution
       if (this.current.resolution === '16x') {
         this.displayedTextures = this.splittedTextures()
         return
